@@ -1,10 +1,10 @@
 <?php
 
-namespace DeepCopyTest\Filter;
+namespace ProfideoDeepCopyTest\Filter;
 
-use DeepCopy\DeepCopy;
-use DeepCopy\Filter\ReplaceFilter;
-use DeepCopy\Matcher\PropertyMatcher;
+use ProfideoDeepCopy\DeepCopy;
+use ProfideoDeepCopy\Filter\ReplaceFilter;
+use ProfideoDeepCopy\Matcher\PropertyMatcher;
 
 class ReplaceFilterTest extends \PHPUnit_Framework_TestCase
 {
@@ -34,7 +34,7 @@ class ReplaceFilterTest extends \PHPUnit_Framework_TestCase
 
         return [
             [$closure, ['foo' => 'bar']],
-            ['DeepCopyTest\Filter\Callback::copy', ['foo' => 'bar', 'baz' => 'foo', 'foobar' => 'baz']],
+            ['ProfideoDeepCopyTest\Filter\Callback::copy', ['foo' => 'bar', 'baz' => 'foo', 'foobar' => 'baz']],
             [[new Callback(), 'callback'], ['foo' => 'foo']]
         ];
     }

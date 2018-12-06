@@ -1,8 +1,8 @@
 <?php
 
-namespace DeepCopy\TypeMatcher\Doctrine;
+namespace ProfideoDeepCopy\TypeMatcher\Doctrine;
 
-use DeepCopy\TypeMatcher\TypeMatcherInterface;
+use ProfideoDeepCopy\TypeMatcher\TypeMatcherInterface;
 use Doctrine\Common\Persistence\Proxy;
 use ReflectionObject;
 

@@ -1,12 +1,12 @@
 <?php
 
-namespace DeepCopyTest;
+namespace ProfideoDeepCopyTest;
 
-use DeepCopy\DeepCopy;
-use DeepCopy\Filter\Filter;
-use DeepCopy\Matcher\PropertyMatcher;
-use DeepCopy\TypeFilter\TypeFilter;
-use DeepCopy\TypeMatcher\TypeMatcher;
+use ProfideoDeepCopy\DeepCopy;
+use ProfideoDeepCopy\Filter\Filter;
+use ProfideoDeepCopy\Matcher\PropertyMatcher;
+use ProfideoDeepCopy\TypeFilter\TypeFilter;
+use ProfideoDeepCopy\TypeMatcher\TypeMatcher;
 
 /**
  * DeepCopyTest
@@ -111,15 +111,15 @@ class DeepCopyTest extends AbstractTestClass
 
     public function testNonClonableItems()
     {
-        $a = new \ReflectionClass('DeepCopyTest\A');
+        $a = new \ReflectionClass('ProfideoDeepCopyTest\A');
         $deepCopy = new DeepCopy();
         $a2 = $deepCopy->skipUncloneable()->copy($a);
         $this->assertSame($a, $a2);
     }
 
     /**
-     * @expectedException \DeepCopy\Exception\CloneException
-     * @expectedExceptionMessage Class "DeepCopyTest\C" is not cloneable.
+     * @expectedException \ProfideoDeepCopy\Exception\CloneException
+     * @expectedExceptionMessage Class "ProfideoDeepCopyTest\C" is not cloneable.
      */
     public function testCloneException()
     {
@@ -136,7 +136,7 @@ class DeepCopyTest extends AbstractTestClass
         $o = new A();
         $o->property1 = 'foo';
 
-        $filter = $this->getMockForAbstractClass('DeepCopy\Filter\Filter');
+        $filter = $this->getMockForAbstractClass('ProfideoDeepCopy\Filter\Filter');
         $filter->expects($this->once())
             ->method('apply')
             ->will($this->returnCallback(function($object, $property) {
@@ -161,7 +161,7 @@ class DeepCopyTest extends AbstractTestClass
         $o->property1 = new B();
 
         /* @var Filter|\PHPUnit_Framework_MockObject_MockObject $filter */
-        $filter = $this->getMockForAbstractClass('DeepCopy\Filter\Filter');
+        $filter = $this->getMockForAbstractClass('ProfideoDeepCopy\Filter\Filter');
         $filter->expects($this->once())
             ->method('apply')
             ->will($this->returnCallback(function($object, $property, $objectCopier) {
@@ -184,13 +184,13 @@ class DeepCopyTest extends AbstractTestClass
         $o->property1 = new B();
 
         /* @var TypeFilter|\PHPUnit_Framework_MockObject_MockObject $filter */
-        $filter = $this->getMockForAbstractClass('DeepCopy\TypeFilter\TypeFilter');
+        $filter = $this->getMockForAbstractClass('ProfideoDeepCopy\TypeFilter\TypeFilter');
         $filter->expects($this->once())
             ->method('apply')
             ->will($this->returnValue(null));
 
         $deepCopy = new DeepCopy();
-        $deepCopy->addTypeFilter($filter, new TypeMatcher('DeepCopyTest\B'));
+        $deepCopy->addTypeFilter($filter, new TypeMatcher('ProfideoDeepCopyTest\B'));
         /** @var A $new */
         $new = $deepCopy->copy($o);
 
@@ -205,13 +205,13 @@ class DeepCopyTest extends AbstractTestClass
         $arr = [new A, new A, new B, new B, new A];
 
         /* @var TypeFilter|\PHPUnit_Framework_MockObject_MockObject $filter */
-        $filter = $this->getMockForAbstractClass('DeepCopy\TypeFilter\TypeFilter');
+        $filter = $this->getMockForAbstractClass('ProfideoDeepCopy\TypeFilter\TypeFilter');
         $filter->expects($this->exactly(2))
             ->method('apply')
             ->will($this->returnValue(null));
 
         $deepCopy = new DeepCopy();
-        $deepCopy->addTypeFilter($filter, new TypeMatcher('DeepCopyTest\B'));
+        $deepCopy->addTypeFilter($filter, new TypeMatcher('ProfideoDeepCopyTest\B'));
         /** @var A $new */
         $new = $deepCopy->copy($arr);
 

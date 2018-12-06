@@ -1,6 +1,6 @@
 <?php
 
-namespace DeepCopy\Matcher;
+namespace ProfideoDeepCopy\Matcher;
 
 /**
  * Matcher interface

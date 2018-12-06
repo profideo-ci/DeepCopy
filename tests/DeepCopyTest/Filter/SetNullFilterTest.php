@@ -1,10 +1,10 @@
 <?php
 
-namespace DeepCopyTest\Filter;
+namespace ProfideoDeepCopyTest\Filter;
 
-use DeepCopy\DeepCopy;
-use DeepCopy\Filter\SetNullFilter;
-use DeepCopy\Matcher\PropertyMatcher;
+use ProfideoDeepCopy\DeepCopy;
+use ProfideoDeepCopy\Filter\SetNullFilter;
+use ProfideoDeepCopy\Matcher\PropertyMatcher;
 
 /**
  * Test SetNull filter

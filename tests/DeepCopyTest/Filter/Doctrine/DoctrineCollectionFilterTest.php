@@ -1,10 +1,10 @@
 <?php
 
-namespace DeepCopyTest\Filter\Doctrine;
+namespace ProfideoDeepCopyTest\Filter\Doctrine;
 
-use DeepCopy\DeepCopy;
-use DeepCopy\Filter\Doctrine\DoctrineCollectionFilter;
-use DeepCopy\Matcher\PropertyMatcher;
+use ProfideoDeepCopy\DeepCopy;
+use ProfideoDeepCopy\Filter\Doctrine\DoctrineCollectionFilter;
+use ProfideoDeepCopy\Matcher\PropertyMatcher;
 use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\Common\Collections\Collection;
 

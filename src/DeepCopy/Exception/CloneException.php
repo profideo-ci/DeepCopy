@@ -1,5 +1,5 @@
 <?php
-namespace DeepCopy\Exception;
+namespace ProfideoDeepCopy\Exception;
 
 class CloneException extends \UnexpectedValueException
 {

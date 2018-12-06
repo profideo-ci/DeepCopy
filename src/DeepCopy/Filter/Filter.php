@@ -1,6 +1,6 @@
 <?php
 
-namespace DeepCopy\Filter;
+namespace ProfideoDeepCopy\Filter;
 
 /**
  * Filter to apply to a property while copying an object

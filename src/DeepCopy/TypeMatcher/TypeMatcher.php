@@ -1,6 +1,6 @@
 <?php
 
-namespace DeepCopy\TypeMatcher;
+namespace ProfideoDeepCopy\TypeMatcher;
 
 /**
  * TypeMatcher class

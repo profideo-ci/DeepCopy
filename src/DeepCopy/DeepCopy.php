@@ -1,14 +1,14 @@
 <?php
 
-namespace DeepCopy;
+namespace ProfideoDeepCopy;
 
-use DeepCopy\Exception\CloneException;
-use DeepCopy\Filter\Filter;
-use DeepCopy\Matcher\Matcher;
-use DeepCopy\TypeFilter\TypeFilter;
-use DeepCopy\TypeMatcher\TypeMatcherInterface;
+use ProfideoDeepCopy\Exception\CloneException;
+use ProfideoDeepCopy\Filter\Filter;
+use ProfideoDeepCopy\Matcher\Matcher;
+use ProfideoDeepCopy\TypeFilter\TypeFilter;
+use ProfideoDeepCopy\TypeMatcher\TypeMatcherInterface;
 use ReflectionProperty;
-use DeepCopy\Reflection\ReflectionHelper;
+use ProfideoDeepCopy\Reflection\ReflectionHelper;
 
 /**
  * DeepCopy

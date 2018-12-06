@@ -1,6 +1,6 @@
 <?php
 
-namespace DeepCopy\Reflection;
+namespace ProfideoDeepCopy\Reflection;
 
 class ReflectionHelper
 {

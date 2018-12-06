@@ -1,6 +1,6 @@
 <?php
 
-namespace DeepCopy\TypeFilter;
+namespace ProfideoDeepCopy\TypeFilter;
 
 interface TypeFilter
 {

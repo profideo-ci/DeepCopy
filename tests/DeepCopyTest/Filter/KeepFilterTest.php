@@ -1,10 +1,10 @@
 <?php
 
-namespace DeepCopyTest\Filter;
+namespace ProfideoDeepCopyTest\Filter;
 
-use DeepCopy\DeepCopy;
-use DeepCopy\Filter\KeepFilter;
-use DeepCopy\Matcher\PropertyMatcher;
+use ProfideoDeepCopy\DeepCopy;
+use ProfideoDeepCopy\Filter\KeepFilter;
+use ProfideoDeepCopy\Matcher\PropertyMatcher;
 
 /**
  * Test Keep filter

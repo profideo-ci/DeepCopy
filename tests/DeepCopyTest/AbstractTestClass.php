@@ -1,8 +1,8 @@
 <?php
 
-namespace DeepCopyTest;
+namespace ProfideoDeepCopyTest;
 
-use DeepCopy\Reflection\ReflectionHelper;
+use ProfideoDeepCopy\Reflection\ReflectionHelper;
 
 /**
  * Abstract test class

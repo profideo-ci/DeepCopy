@@ -1,13 +1,13 @@
 <?php
 
-namespace DeepCopy\Matcher;
+namespace ProfideoDeepCopy\Matcher;
 
 use ReflectionProperty;
 
 /**
  * Match a property by its type
  *
- * @deprecated It is recommended to use {@see DeepCopy\TypeFilter\TypeFilter} instead, as it applies on all occurrences
+ * @deprecated It is recommended to use {@see ProfideoDeepCopy\TypeFilter\TypeFilter} instead, as it applies on all occurrences
  *             of given type in copied context (eg. array elements), not just on object properties.
  */
 class PropertyTypeMatcher implements Matcher

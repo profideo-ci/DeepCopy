@@ -1,8 +1,8 @@
 <?php
 
-namespace DeepCopy\Filter\Doctrine;
+namespace ProfideoDeepCopy\Filter\Doctrine;
 
-use DeepCopy\Filter\Filter;
+use ProfideoDeepCopy\Filter\Filter;
 use Doctrine\Common\Collections\ArrayCollection;
 
 class DoctrineEmptyCollectionFilter implements Filter

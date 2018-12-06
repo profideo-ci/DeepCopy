@@ -1,7 +1,7 @@
 <?php
-namespace DeepCopyTest\Matcher;
+namespace ProfideoDeepCopyTest\Matcher;
 
-use DeepCopy\Matcher\PropertyNameMatcher;
+use ProfideoDeepCopy\Matcher\PropertyNameMatcher;
 
 /**
  * Test PropertyNameMatcher

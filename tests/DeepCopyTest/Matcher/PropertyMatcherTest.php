@@ -1,7 +1,7 @@
 <?php
-namespace DeepCopyTest\Matcher;
+namespace ProfideoDeepCopyTest\Matcher;
 
-use DeepCopy\Matcher\PropertyMatcher;
+use ProfideoDeepCopy\Matcher\PropertyMatcher;
 
 /**
  * Test PropertyMatcher
@@ -10,7 +10,7 @@ class PropertyMatcherTest extends \PHPUnit_Framework_TestCase
 {
     public function testMatches()
     {
-        $matcher = new PropertyMatcher('DeepCopyTest\Matcher\PropertyMatcherTestFixture', 'property1');
+        $matcher = new PropertyMatcher('ProfideoDeepCopyTest\Matcher\PropertyMatcherTestFixture', 'property1');
 
         $this->assertTrue($matcher->matches(new PropertyMatcherTestFixture(), 'property1'));
         $this->assertFalse($matcher->matches(new \stdClass(), 'property1'));

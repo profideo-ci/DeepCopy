@@ -1,6 +1,6 @@
 <?php
 
-namespace DeepCopy\Filter;
+namespace ProfideoDeepCopy\Filter;
 
 /**
  * Replace the value of a property
